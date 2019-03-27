@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tiempo</title>
+    <link rel="stylesheet" href="css/mi.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Cabecera -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-8 text-center cabecera rounded">
+          <h1>API OpenWeather</h1>
+        </div>
+      </div>
+      <!-- Formulario-->
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <input
+            type="text"
+            name="ciudad"
+            id="ciudad"
+            class="form-control"
+            placeholder="Introduce la Ciudad"
+          />
+        </div>
+        <div class="col-2">
+          <button class="btn btn-primary" id="consultar">Consultar</button>
+        </div>
+      </div>
+      <!-- Contenido -->
+      <div class="row justify-content-center">
+        <div class="col-10" id="contenido"></div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/mi.js"></script>
+  </body>
+</html>
